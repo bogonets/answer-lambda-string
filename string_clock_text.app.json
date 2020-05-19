@@ -1,0 +1,59 @@
+{
+    "info": {
+        "name": "string_clock_text",
+        "version": "1.0.0",
+        "category": "string",
+        "keywords": [
+            "string"
+        ],
+        "homepage": "https://answer.bogonets.com/",
+        "bugs": "https://answer.bogonets.com/",
+        "license": "Bogonet License",
+        "author": "wooruang",
+        "dependencies": [
+            {
+                "type": "pip",
+                "src": "numpy"
+            }
+        ],
+        "engines": ">=1.0.2",
+        "environment": {},
+        "titles": {
+            "en": "Current Clock Text",
+            "ko": "현재 시계 문자열"
+        },
+        "descriptions": {
+            "en": "Provide a current time's text",
+            "ko": "현재 시계 문자열을 제공한다."
+        },
+        "documentation_mime": "text",
+        "documentations": {},
+        "meta": {}
+    },
+    "controls": {
+        "output": [
+            {
+                "name": "text",
+                "mime": "text/plain"
+            }
+        ]
+    },
+    "props": [
+        {
+            "rule": "read_and_write",
+            "name": "format",
+            "default_value": "%Y%m%dT%H%M%S",
+            "type": "str",
+            "required": true,
+            "valid": {},
+            "title": {
+                "en": "Format",
+                "ko": "형식"
+            },
+            "help": {
+                "en": "Format for time",
+                "ko": "시계 문자열을 위한 포맷"
+            }
+        }
+    ]
+}
