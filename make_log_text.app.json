@@ -1,10 +1,10 @@
 {
     "info": {
-        "name": "string_clock_text",
+        "name": "make_log_text",
         "version": "1.0.0",
         "category": "string",
         "keywords": [
-            "string", "clock"
+            "string", "clock", "log"
         ],
         "homepage": "https://answer.bogonets.com/",
         "bugs": "https://answer.bogonets.com/",
@@ -14,18 +14,19 @@
         "engines": ">=1.0.2",
         "environment": {},
         "titles": {
-            "en": "Current Clock Text",
-            "ko": "현재 시계 문자열"
+            "en": "Make log text",
+            "ko": "로그 문자열 생성"
         },
         "descriptions": {
-            "en": "Provide a current time's text",
-            "ko": "현재 시계 문자열을 제공한다."
+            "en": "Provide a log text",
+            "ko": "로그 문자열을 제공한다."
         },
         "documentation_mime": "text",
         "documentations": {},
         "meta": {}
     },
     "controls": {
+        "input": "string",
         "output": [
             {
                 "name": "text",
@@ -36,18 +37,34 @@
     "props": [
         {
             "rule": "read_and_write",
-            "name": "format",
-            "default_value": "%Y%m%dT%H%M%S",
+            "name": "prefix",
+            "default_value": "",
             "type": "str",
             "required": true,
             "valid": {},
             "title": {
-                "en": "Format",
-                "ko": "형식"
+                "en": "Prefix",
+                "ko": "접두사"
             },
             "help": {
-                "en": "Format for time",
-                "ko": "시계 문자열을 위한 포맷"
+                "en": "",
+                "ko": ""
+            }
+        },
+        {
+            "rule": "read_and_write",
+            "name": "suffix",
+            "default_value": "",
+            "type": "str",
+            "required": true,
+            "valid": {},
+            "title": {
+                "en": "Suffix",
+                "ko": "접미사"
+            },
+            "help": {
+                "en": "",
+                "ko": ""
             }
         }
     ]
