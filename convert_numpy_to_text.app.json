@@ -1,0 +1,38 @@
+{
+    "info": {
+        "name": "convert_numpy_to_text",
+        "version": "1.0.0",
+        "category": "string",
+        "keywords": [
+            "string", "clock", "log", "numpy", "convert"
+        ],
+        "homepage": "https://answer.bogonets.com/",
+        "bugs": "https://answer.bogonets.com/",
+        "license": "Bogonet License",
+        "author": "sunhongyi",
+        "dependencies": [],
+        "engines": ">=1.0.2",
+        "environment": {},
+        "titles": {
+            "en": "Convert numpy to text",
+            "ko": "numpy 를 text 로 변환"
+        },
+        "descriptions": {
+            "en": "Converts numpy input to text and return.",
+            "ko": "numpy 입력을 text 로 변환하여 출력한다."
+        },
+        "documentation_mime": "text",
+        "documentations": {},
+        "meta": {}
+    },
+    "controls": {
+        "input": "numpy",
+        "output": [
+            {
+                "name": "text",
+                "mime": "text/plain"
+            }
+        ]
+    },
+    "props": []
+}
