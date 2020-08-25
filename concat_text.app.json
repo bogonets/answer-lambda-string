@@ -1,0 +1,55 @@
+{
+    "info": {
+        "name": "concat_text",
+        "version": "1.0.0",
+        "category": "string",
+        "keywords": [
+            "string", "clock", "log", "concat"
+        ],
+        "homepage": "https://answer.bogonets.com/",
+        "bugs": "https://answer.bogonets.com/",
+        "license": "Bogonet License",
+        "author": "sunhongyi",
+        "dependencies": [],
+        "engines": ">=1.0.2",
+        "environment": {},
+        "titles": {
+            "en": "Concat Text",
+            "ko": "문자열 합치기"
+        },
+        "descriptions": {
+            "en": "return to concat string",
+            "ko": "문자열을 합쳐준다."
+        },
+        "documentation_mime": "text",
+        "documentations": {},
+        "meta": {}
+    },
+    "controls": {
+        "input": ["left_string","right_string"],
+        "output": [
+            {
+                "name": "text",
+                "mime": "text/plain"
+            }
+        ]
+    },
+    "props": [
+        {
+            "rule": "read_and_write",
+            "name": "delimiter",
+            "default_value": "",
+            "type": "str",
+            "required": true,
+            "valid": {},
+            "title": {
+                "en": "Delimiter",
+                "ko": "구분자"
+            },
+            "help": {
+                "en": "",
+                "ko": ""
+            }
+        }
+    ]
+}
