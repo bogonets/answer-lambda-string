@@ -1,0 +1,50 @@
+{
+    "info": {
+        "name": "regex_search.app",
+        "version": "1.0.0",
+        "category": "string",
+        "keywords": [
+            "string", "regex"
+        ],
+        "homepage": "https://answer.bogonets.com/",
+        "bugs": "https://answer.bogonets.com/",
+        "license": "Bogonet License",
+        "author": "wooruang",
+        "dependencies": [],
+        "engines": ">=1.0.2",
+        "environment": {},
+        "titles": {
+            "en": "re.search",
+            "ko": "re.search"
+        },
+        "descriptions": {
+            "en": "Search strings by regex.",
+            "ko": "Regex를 이용하여 문자열을 검색한다."
+        },
+        "documentation_mime": "text",
+        "documentations": {},
+        "meta": {}
+    },
+    "controls": {
+        "input": "string",
+        "output": ["match", "span"]
+    },
+    "props": [
+        {
+            "rule": "read_and_write",
+            "name": "pattern",
+            "default_value": "",
+            "type": "str",
+            "required": true,
+            "valid": {},
+            "title": {
+                "en": "Pattern",
+                "ko": "패턴"
+            },
+            "help": {
+                "en": "",
+                "ko": ""
+            }
+        }
+    ]
+}
